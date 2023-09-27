@@ -1,8 +1,6 @@
-package ericknovello.com.github.sales_api.model.dto;
+package ericknovello.com.github.sales_api.controller.model.dto;
 
 import ericknovello.com.github.sales_api.validation.NotEmptyList;
-import io.swagger.models.auth.In;
-import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Data;

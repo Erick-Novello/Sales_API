@@ -1,4 +1,4 @@
-package ericknovello.com.github.sales_api.model.dto;
+package ericknovello.com.github.sales_api.controller.model.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
