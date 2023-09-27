@@ -1,4 +1,4 @@
-package ericknovello.com.github.sales_api.controller.model.dto;
+package ericknovello.com.github.sales_api.model.dto;
 
 import jakarta.validation.constraints.NotEmpty;
 import lombok.Data;

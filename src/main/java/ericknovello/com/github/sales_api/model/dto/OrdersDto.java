@@ -1,4 +1,4 @@
-package ericknovello.com.github.sales_api.controller.model.dto;
+package ericknovello.com.github.sales_api.model.dto;
 
 import ericknovello.com.github.sales_api.validation.NotEmptyList;
 import jakarta.validation.constraints.NotNull;

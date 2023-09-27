@@ -1,4 +1,4 @@
-package ericknovello.com.github.sales_api.controller.model;
+package ericknovello.com.github.sales_api.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;

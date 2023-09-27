@@ -1,6 +1,6 @@
-package ericknovello.com.github.sales_api.controller.model;
+package ericknovello.com.github.sales_api.model;
 
-import ericknovello.com.github.sales_api.controller.model.enums.StatusOrder;
+import ericknovello.com.github.sales_api.model.enums.StatusOrder;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

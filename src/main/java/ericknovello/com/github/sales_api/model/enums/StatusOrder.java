@@ -1,4 +1,4 @@
-package ericknovello.com.github.sales_api.controller.model.enums;
+package ericknovello.com.github.sales_api.model.enums;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
