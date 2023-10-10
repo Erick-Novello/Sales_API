@@ -22,6 +22,10 @@ public class Users {
 
     @Column(name = "login")
     @NotEmpty(message = "Field login is mandatory")
+    private String login;
+
+    @Column(name = "password")
+    @NotEmpty(message = "Field password is mandatory")
     private String password;
 
     private boolean admin;
