@@ -1,11 +1,11 @@
 package ericknovello.com.github.sales_api.model.dto;
 
 import ericknovello.com.github.sales_api.validation.NotEmptyList;
-import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import javax.validation.constraints.NotNull;
 import java.math.BigDecimal;
 import java.util.List;
 

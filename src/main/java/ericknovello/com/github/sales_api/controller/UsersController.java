@@ -4,17 +4,19 @@ import ericknovello.com.github.sales_api.exception.InvalidPassowrdException;
 import ericknovello.com.github.sales_api.model.Users;
 import ericknovello.com.github.sales_api.model.dto.CredencialDto;
 import ericknovello.com.github.sales_api.model.dto.TokenDto;
+import ericknovello.com.github.sales_api.security.jwt.JwtService;
 import ericknovello.com.github.sales_api.service.UsersService;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
-import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
+
+import javax.validation.Valid;
 
 @RestController
 @RequiredArgsConstructor

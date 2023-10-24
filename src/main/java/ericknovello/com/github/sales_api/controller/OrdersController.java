@@ -12,12 +12,12 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
-import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 
+import javax.validation.Valid;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -51,10 +51,10 @@ public class OrdersController {
             @ApiResponse(code = 404, message = "Order not found")
     })
     @ResponseStatus(HttpStatus.OK)
-    public InformationOrderDto showOrder(@PathVariable Integer id){
+    public InformationOrderDto showOrder(@PathVariable Integer id) {
         return ordersService.showOrder(id)
                 .map(this::builderInformacaoPedidoDto)
-                .orElseThrow(()-> new ResponseStatusException(HttpStatus.NOT_FOUND,"Order not found"));
+                .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Order not found"));
     }
 
     @PutMapping("/{id}")
@@ -84,7 +84,7 @@ public class OrdersController {
                 .build();
     }
 
-    private List<InformationItemOrderDto> builderInformacaoItemPedidoDto (List<OrderedItem> itens){
+    private List<InformationItemOrderDto> builderInformacaoItemPedidoDto(List<OrderedItem> itens) {
         return itens.stream()
                 .map(item -> InformationItemOrderDto.builder()
                         .productDescription(item.getProduct().getDescription())

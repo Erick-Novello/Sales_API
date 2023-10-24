@@ -1,8 +1,9 @@
 package ericknovello.com.github.sales_api.model.dto;
 
-import jakarta.validation.constraints.NotEmpty;
 import lombok.Data;
 import org.hibernate.validator.constraints.br.CPF;
+
+import javax.validation.constraints.NotEmpty;
 
 @Data
 public class ClientDto {

@@ -25,12 +25,12 @@ public class UsersService implements UserDetailsService {
         return usersRepository.save(users);
     }
 
-    public UserDetails authenticate(Users user) {
+    public void authenticate(Users user) {
         UserDetails userDetails = loadUserByUsername(user.getLogin());
         boolean passwordOk = passwordEncoder.matches(user.getPassword(), userDetails.getPassword());
 
         if (passwordOk) {
-            return userDetails;
+            return;
         }
 
         throw new InvalidPassowrdException();
